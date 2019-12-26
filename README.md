@@ -8,13 +8,11 @@
 ```sql
 create table USER
 (
+    ID  int AUTO_INCREMENT PRIMARY KEY NOT NULL ,
     ACCOUNT_ID   VARCHAR(100),
     NAME         VARCHAR(50),
     TOKEN        CHAR(36),
     GMT_CREATE   BIGINT,
-    GMT_MODIFIED BIGINT,
-    ID    int     INTEGE auto_increment,
-    constraint USER_PK
-        primary key (ID)
+    GMT_MODIFIED BIGINT
 );
 ```
